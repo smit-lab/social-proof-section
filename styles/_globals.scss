@@ -1,0 +1,42 @@
+//fonts
+$fw-heading: 700;
+$fw-body: 500;
+$fw-light: 400;
+
+//colors
+
+$darkMagenta: hsl(300, 43%, 22%);
+$softPink: hsl(333, 80%, 67%);
+$darkGrayishMagenta: hsl(303, 10%, 53%);
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+//box
+@mixin review-box {
+  padding: rem(40) rem(32) rem(35);
+  border-radius: rem(8);
+  background-color: $darkMagenta;
+  color: $white;
+}
+
+//review-box
+@mixin rating-box {
+  background-color: $lightGrayishMagenta;
+  color: $darkMagenta;
+  font-weight: $fw-heading;
+  border-radius: rem(8);
+}
+
+//flex
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//grid
+
+@mixin grid {
+  display: grid;
+  place-content: center;
+}
